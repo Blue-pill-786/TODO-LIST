@@ -25,10 +25,14 @@ const tasksCounter = document.getElementById('tasks-counter');
 //         renderList();
 
 //     }catch(error){
-//         console.log('error', error);
-//     }
+    //         console.log('error', error);
+    //     }
+    
+    // }
+function TotalTask(tasks){
+    
 
-// }
+}
 
 
 function addTaskToDom (task) {
@@ -42,6 +46,7 @@ function addTaskToDom (task) {
 
     `;
     taskList.append(li);
+    tasksCounter.innerHTML = `${tasks.length}`
 }
 
 function renderList () {
@@ -49,6 +54,7 @@ function renderList () {
     for(let i=0;i<tasks.length; i++){
         addTaskToDom(tasks[i]);
     }
+    
 }
 
 function toggleTask (taskId) {
@@ -73,8 +79,10 @@ function deleteTask (taskId) {
     tasks = newTasks;
     renderList();
     showNotification('Task deleted successfully');
+   
 
 }
+    
 
 function addTask (task) {
     if(task){
