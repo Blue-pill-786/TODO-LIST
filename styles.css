@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
+  background-color: gold;
 }
 #container {
   width: 500px;
@@ -14,11 +16,12 @@ ul {
 }
 ul li {
   padding: 10px;
-  /* padding-left: 0; */
   display: flex;
   justify-content: space-between;
-  align-items: inherit;
   align-items: center;
+  border: 2px solid ghostwhite;
+  border-radius: 12px;
+  margin-top: 2px;
 }
 ul li:hover {
   background: #f3f3f3;
@@ -79,18 +82,25 @@ ul li:hover {
 }
 h1 {
   text-align: center;
+  font-family: cursive;
 }
 .add-task {
   width: 100%;
     outline: none;
     font-size: 15px;
     padding: 11px;
-    border: 1px solid #f3f3f3;
+    border: 4px solid #f3f3f3;
     margin-bottom: 3px;
+    border-radius: 10px;
 }
 #total-tasks {
   margin-bottom: 20px;
   font-size: 13px;
     margin-left: 2px;
     color: gray;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    font-style: oblique;
+    background-color: goldenrod;
 }
